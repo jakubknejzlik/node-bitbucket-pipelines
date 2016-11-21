@@ -1,0 +1,8 @@
+image: ubuntu
+pipelines:
+  default:
+    - step:
+        script:
+          - echo "Hello world"
+          - echo "This is just test"
+          - pwd

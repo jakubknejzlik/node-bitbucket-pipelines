@@ -1,0 +1,21 @@
+image: node
+pipelines:
+  default:
+    - step:
+        image: node
+        script:
+          - echo "Hello default"
+  branches:
+    master:
+      - step:
+          script:
+            - echo "Hello master"
+    develop:
+      - step:
+          script:
+            - echo "Hello develop"
+  tags:
+    1.0.0:
+      - step:
+          script:
+            - echo "Hello 1.0.0"
