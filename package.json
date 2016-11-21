@@ -1,7 +1,7 @@
 {
   "name": "bitbucket-pipelines",
   "description": "Debug bitbucket pipelines in docker on your local machine",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "keywords": [
     "bitbucket",
@@ -22,8 +22,8 @@
   "devDependencies": {
     "mocha": "^3.1.2"
   },
-  "scripts":{
-    "test":"mocha test"
+  "scripts": {
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
