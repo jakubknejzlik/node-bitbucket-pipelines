@@ -1,5 +1,5 @@
+language: node_js
 sudo: required
-
 services:
   - docker
 script: npm test
