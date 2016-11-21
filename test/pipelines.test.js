@@ -16,7 +16,7 @@ describe('pipelines',() => {
       let pipelineFile = path.join(__dirname,'fixtures/default.yaml')
       let result = execSync(`${bin} run -s -i ${pipelineFile}`).toString()
       assert.equal(result, "Hello world\nThis is just test\n/app\n")
-   })
+   }).timeout(30000)
 
    it('should run references', () => {
       let pipelineFile = path.join(__dirname,'fixtures/references.yaml')
@@ -27,5 +27,5 @@ describe('pipelines',() => {
          let result = execSync(`${bin} run ${reference} -s -i ${pipelineFile}`).toString()
          assert.equal(result, "Hello " + reference + "\n")
       })
-   }).timeout(10000)
+   }).timeout(30000)
 })
