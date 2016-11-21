@@ -1,8 +1,8 @@
-image: node
+image: ubuntu
 pipelines:
   default:
     - step:
-        image: node
+        image: ubuntu
         script:
           - echo "Hello default"
   branches:
