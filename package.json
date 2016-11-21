@@ -1,7 +1,7 @@
 {
   "name": "bitbucket-pipelines",
   "description": "Debug bitbucket pipelines in docker on your local machine",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "keywords": [
     "bitbucket",
